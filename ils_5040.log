@@ -1,0 +1,9 @@
+N=5040 d=5040 J=0 N0=1: pool 31 primes, density 1.0214 (+alg 0.000); cells 2.54e+07
+greedy+LS: uncovered 7193767 = 2.8320e-01 [0s]
+iter 0: uncovered 7185773 = 2.8289e-01 [0s]
+iter 10: uncovered 7185756 = 2.8289e-01 [1s]
+iter 18: uncovered 7185750 = 2.8289e-01 [2s]
+iter 20: uncovered 7184532 = 2.8284e-01 [3s]
+iter 22: uncovered 7184450 = 2.8283e-01 [3s]
+iter 966: uncovered 7184371 = 2.8283e-01 [95s]
+FINAL: uncovered 7184371 / 25401600 = 2.8283e-01  [297s]

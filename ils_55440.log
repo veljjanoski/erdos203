@@ -1,0 +1,13 @@
+N=55440 d=55440 J=0 N0=1: pool 55 primes, density 1.1630 (+alg 0.000); cells 3.07e+09
+greedy+LS: uncovered 736936582 = 2.3976e-01 [15s]
+iter 1: uncovered 736885869 = 2.3975e-01 [36s]
+iter 3: uncovered 736763702 = 2.3971e-01 [57s]
+iter 10: uncovered 736747369 = 2.3970e-01 [130s]
+iter 16: uncovered 736746744 = 2.3970e-01 [201s]
+iter 44: uncovered 736736046 = 2.3970e-01 [507s]
+iter 47: uncovered 736735894 = 2.3970e-01 [540s]
+iter 55: uncovered 736734044 = 2.3970e-01 [622s]
+iter 81: uncovered 736733452 = 2.3970e-01 [897s]
+iter 190: uncovered 736732517 = 2.3970e-01 [2143s]
+iter 202: uncovered 736732359 = 2.3970e-01 [2269s]
+FINAL: uncovered 736732359 / 3073593600 = 2.3970e-01  [3266s]

@@ -1,0 +1,7 @@
+N=55440, 53 primes, density 1.044, algebraic [('pow', 3), ('sg', 4)]; initial uncovered 0.8333
+greedy: uncovered 942883313 / 3073593600 = 3.068e-01  [2s]
+round 1: uncovered 933509747 = 3.037e-01  [5s]
+round 2: uncovered 933379773 = 3.037e-01  [8s]
+round 3: uncovered 933379192 = 3.037e-01  [10s]
+round 4: uncovered 933379192 = 3.037e-01  [13s]
+local optimum

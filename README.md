@@ -30,7 +30,7 @@ must be an N0-th power residue.
    (resp. lcm(a, b) ≤ E): every prime with e_p = lcm(a, b) divides this gcd. Results:
    all primes with e_p ≤ 2000: 442 primes, Σ 1/e_p = 1.973 (`primes_e2000.json`); all primes with e_p ≤ 5000:
    1006 primes, 2.146; e_p | 55440: 55 primes, 1.163 (complete); primes p ≤ 10^7 with e_p | 720720: 99 primes,
-   1.249; with e_p | 4324320: 152 primes, 1.294.
+   1.249.
 2. `cover203.py`, `strip_gpu.py` — GPU (CuPy) covering search on the torus Z_N², greedy + iterated local
    search over the coset choices, with or without the algebraic free sets (`--N0`).
    Best coverage found: N = 5040 (31 primes, density 1.021): 71.7 % (matches the 71–72 % reported in the
@@ -40,10 +40,11 @@ must be an N0-th power residue.
 3. `level203.py`, `maxJ.py` — a structured family. Substituting k' = k + J l, primes with
    (3·2^{−J})^d ≡ 1 (mod p) give cosets that depend on l only mod d, so the covering lives on a strip
    Z_N × Z_d and the lattices nest like 1D moduli. For every such family the density Σ 1/e_p over the
-   admissible primes is computed exactly (branch and bound over J). Rigorous consequence: for N = 720720
-   and the 99 primes with e_p | N, no strip covering exists for any J and any d ≤ 360 (maximal density
-   0.987 < 1); at d = 720 the maximal density is 1.050 and the search leaves 28 % uncovered.
-   For modulus 4324320 (primes ≤ 10^7, either orientation) the same holds for d ≤ 240. Over all 442 primes
+   admissible primes is computed exactly (branch and bound over J; `level203.py scanJ` for every divisor d).
+   Rigorous consequence: for N = 720720 and the 99 primes with e_p | N, no strip covering exists for any J
+   and any strip height d < 720 (the maximal density is < 1 for every divisor d < 720 of N, and the pool for
+   a general d equals the pool for gcd(d, N)); at d = 720 the maximal density is 1.050 and the search leaves
+   28 % uncovered. Over all 442 primes
    with e_p ≤ 2000 the maximal strip density is at least 0.62 (d = 1), 0.93 (d = 2), 1.13 (d = 12), 1.22 (d = 60)
    (branch and bound stopped by a time limit).
 4. Structure of the lattices (why exact coverings are hard here). Exact coverings in 1D rely on nested
